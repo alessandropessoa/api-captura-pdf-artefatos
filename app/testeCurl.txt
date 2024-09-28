@@ -1,0 +1,4 @@
+curl -X 'POST' \
+  'http://127.0.0.1:8000/enviar-formulario/' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'nome=Joao&email=joao@example.com&mensagem=Olá!'
