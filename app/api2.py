@@ -59,7 +59,7 @@ async def relat_clique(request: Request, clique:int, nomebotao:str=None):
         store[strartc.__str__()].qtd_clique +=clique
         return templates.TemplateResponse("qtd_cliques.html", {"request": request, "dados": store[strartc.__str__()] ,})
     else:
-        print("já existe ,criar logica aqui: ",store)
+        print("já existe ,criar logica aqui: ",nomebotao)
         store[nomebotao].qtd_clique +=clique
         return templates.TemplateResponse("qtd_cliques.html", {"request": request, "dados": store[nomebotao] ,})
 
