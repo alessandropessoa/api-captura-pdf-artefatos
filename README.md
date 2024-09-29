@@ -4,3 +4,9 @@ O app quando em sua fase completa deve ser cpaz de rastrear os artefatos, que po
 os campos interativos do pdf, neste sentido deve-se adicionar JS no pdf e entender que pode gaver limitaçoes
 quanto a captura desse dados devido a nem todos os programas terem suporte a JS, mas como a maioria irá interagir com esses
 pdf no desktop ou mobile, é possivel que a maioria dos casos sejam capturados, teste deveram ser feitos.  
+
+
+para rodar o projeto 
+uvicorn app.api:app --host 0.0.0.0 --port 8000 --reload --reload-dir /home/alessandro/Documentos/projetoLeadPdf
+ou
+uvicorn app.api2:app --host 0.0.0.0 --port 8000 --reload --reload-dir /home/alessandro/Documentos/projetoLeadPdf
